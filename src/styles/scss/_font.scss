@@ -1,0 +1,17 @@
+@mixin fontRowdies($name, $weight) {
+    @font-face {
+        font-family: 'Rowdies';
+        src: url("/fonts/#{$name}.ttf") format("truetype");
+        font-weight: $weight;
+        font-style: normal;
+    }
+}
+
+@include fontRowdies('Rowdies-Regular', normal);
+@include fontRowdies('Rowdies-Bold', bold);
+@include fontRowdies('Rowdies-Bold', 600);
+@include fontRowdies('Rowdies-Bold', 700);
+@include fontRowdies('Rowdies-Light', 100);
+@include fontRowdies('Rowdies-Light', 200);
+@include fontRowdies('Rowdies-Light', 300);
+@include fontRowdies('Rowdies-Light', 400);
